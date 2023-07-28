@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './game-details-area.component.html',
-  styleUrls: ['./game-details-area.component.scss']
+  styleUrls: ['./game-details-area.component.scss'],
 })
 export class GameDetailsAreaComponent {
-
+  public victoryPointChart = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 }

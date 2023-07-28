@@ -1,1 +1,25 @@
-<p>game-details-area works!</p>
+<div class="game-details">
+  <div class="game-details__actions">
+    <div class="game-details__agendas"></div>
+    <div class="game-details__action-cards"></div>
+  </div>
+  <div class="game-details__objectives">
+    <div class="game-details__p1-obj"></div>
+    <div class="game-details__p1-obj"></div>
+    <div class="game-details__p1-obj"></div>
+    <div class="game-details__p1-obj"></div>
+    <div class="game-details__p1-obj"></div>
+  </div>
+  <ul class="game-details__vp-board">
+    <li class="game-details__vp" *ngFor="let num of victoryPointChart">
+      {{ num }}
+    </li>
+  </ul>
+  <div class="game-details__objectives">
+    <div class="game-details__p2-obj"></div>
+    <div class="game-details__p2-obj"></div>
+    <div class="game-details__p2-obj"></div>
+    <div class="game-details__p2-obj"></div>
+    <div class="game-details__p2-obj"></div>
+  </div>
+</div>

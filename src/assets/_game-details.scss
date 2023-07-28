@@ -1,0 +1,63 @@
+.game-details {
+  background-color: rgba($color-black, 0.8);
+  padding: 3rem;
+  height: calc(100vh - 65px);
+  font-family: $font-display;
+  display: flex;
+  gap: 2rem;
+
+  &__p1-obj,
+  &__p2-obj,
+  &__agendas,
+  &__action-cards
+  {
+    background-size: cover;
+    height: 150px;
+    width: 100px;
+    border: 2px solid $color-accent;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 10px 2px $color-accent;
+    }
+  }
+
+  &__agendas {
+    background-image: url("../assets/agenda-card.png");
+  }
+
+  &__action-cards {
+    background-image: url("../assets/action-card.png");
+  }
+
+  &__p1-obj {
+    background-image: url("../assets/po-card-1.png");
+  }
+
+  &__p2-obj {
+    background-image: url("../assets/po-card-2.png");
+  }
+
+  &__objectives,
+  &__actions
+  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  &__vp {
+    background-color: $color-accent;
+    color: $color-black;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 1px solid $color-black;
+
+    &:hover {
+      box-shadow: 0 0 10px 2px $color-accent;
+      cursor: pointer;
+    }
+  }
+}
