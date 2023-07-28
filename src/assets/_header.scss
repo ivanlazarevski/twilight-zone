@@ -1,0 +1,26 @@
+.header {
+  background-color: $color-primary;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  &-brand {
+    font-size: 3rem;
+    font-family: $font-display;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  &-register {
+    background-color: $color-accent;
+  }
+
+  &-auth {
+    display: flex;
+    gap: 1rem;
+  }
+}

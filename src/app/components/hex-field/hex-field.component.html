@@ -1,0 +1,22 @@
+<div class="hex" [ngClass]="classList" (click)="openHexDialog()"></div>
+
+<dialog #hexDialog class="hex-dialog">
+  <h2>Activated by:</h2>
+  <ul>
+    <li>Player 1</li>
+    <li>Player 3</li>
+  </ul>
+  <h2>Present Fleets:</h2>
+  <ul>
+    <li>Player 1:</li>
+    <li>
+      <ul>
+        <li>2 Carriers</li>
+        <li>1 Cruiser</li>
+        <li>4 Infantry</li>
+      </ul>
+    </li>
+  </ul>
+  <button class="btn close-btn" (click)="closeHexDialog()">X</button>
+  <button class="btn">Activate</button>
+</dialog>

@@ -1,0 +1,43 @@
+.grid-col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+  width: 130px;
+
+  @media only screen and (max-width: 1920px) {
+    row-gap: 1.75rem;
+    width: 94px;
+  }
+
+  &.left1,
+  &.right1 {
+    margin-top: 7.5rem;
+
+    @media only screen and (max-width: 1920px) {
+      margin-top: 5.4rem;
+    }
+  }
+
+  &.left2,
+  &.right2 {
+    margin-top: 14.9rem;
+
+    @media only screen and (max-width: 1920px) {
+      margin-top: 108px;
+    }
+  }
+
+  &.left3,
+  &.right3 {
+    margin-top: 22.4rem;
+    @media only screen and (max-width: 1920px) {
+      margin-top: 162px;
+    }
+  }
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}

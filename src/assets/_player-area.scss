@@ -1,0 +1,57 @@
+.player-area {
+  background-color: rgba($color-black, 0.8);
+  padding: 3rem;
+  height: calc(100vh - 59px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba($color-white, 0.3);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 2px solid $color-accent;
+  }
+
+  &__resources > .player-area__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__planet-resources > .player-area__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__value {
+    font-family: $font-display;
+    font-size: 3rem;
+    width: fit-content;
+    &:hover {
+      color: $color-accent;
+      cursor: pointer;
+    }
+  }
+
+  &__actcards-btn,
+  &__planets-btn {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid $color-accent;
+    width: 125px;
+
+    &:hover {
+      box-shadow: 0 0 10px 2px $color-accent;
+    }
+  }
+
+  &__actcards-btn {
+    background-image: url("../assets/action-card.png");
+  }
+
+  &__planets-btn {
+    background-image: url("../assets/planet-card.jpg");
+  }
+}

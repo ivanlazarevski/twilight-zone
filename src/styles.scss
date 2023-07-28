@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Basics
+@import "./assets/base";
+
+// Base Components
+@import "./assets/button";
+
+
+// Components
+@import "./assets/header";
+@import "./assets/hex-field";
+@import "./assets/game-map";
+@import "./assets/hex-dialog";
+@import "./assets/player-area";
