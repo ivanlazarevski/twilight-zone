@@ -1,19 +1,19 @@
 .game-details {
-  background-color: rgba($color-black, 0.8);
   padding: 3rem;
-  height: calc(100vh - 65px);
+  height: 100vh;
   font-family: $font-display;
   display: flex;
   gap: 2rem;
+  align-items: center;
 
   &__p1-obj,
   &__p2-obj,
   &__agendas,
   &__action-cards
   {
-    background-size: cover;
-    height: 150px;
-    width: 100px;
+    background-size: contain;
+    height: 137px;
+    width: 90px;
     border: 2px solid $color-accent;
     cursor: pointer;
 

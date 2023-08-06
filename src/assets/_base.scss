@@ -11,7 +11,7 @@
 
 $hex-color: rgba(#ccc, 0.4);
 $hex-color--mecatol: rgba(#3498db, 0.4);
-$hex-hover: rgba(#ecf0f1, 0.4);
+$hex-color--light: rgba(#ecf0f1, 0.4);
 $hex-starter: rgba(#2ecc71, 0.4);
 $font-display: "Orbitron", sans-serif;
 $font-main: "Roboto", sans-serif;
@@ -48,6 +48,7 @@ main {
 .game-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 h1,

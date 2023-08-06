@@ -1,83 +1,31 @@
 .hex {
-  margin-top: 42px;
-  width: 146px;
-  height: 84px;
+  height: 90px;
+  width: 100px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background-color: $hex-color;
-  border-color: $hex-color;
-  position: relative;
-  transform: rotate(90deg);
   cursor: pointer;
+  transition: background-color 200ms ease;
 
   &:hover {
-    background-color: $hex-hover;
-    border-color: $hex-hover;
+    background-color: $hex-color--light;
   }
 
-  @media only screen and (max-width: 1920px) {
-    margin-top: 30px;
-    width: 104px;
-    height: 60px;
+  &.starter {
+    background-color: $hex-starter;
+    &:hover {
+      background-color: $hex-starter-light;
+    }
   }
-}
 
-.hex:before {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-bottom: 42px solid;
-  border-color: inherit;
-  border-left: 73px solid transparent;
-  border-right: 73px solid transparent;
-  position: absolute;
-  top: -42px;
-
-  @media only screen and (max-width: 1920px) {
-    border-bottom-width: 30px;
-    border-left-width: 52px;
-    border-right-width: 52px;
-    top: -30px;
+  &.mecatol {
+    background-color: $hex-color--mecatol;
+    &:hover {
+      background-color: $hex-color--mecatol-light;
+    }
   }
-}
 
-.hex:after {
-  content: " ";
-  width: 0;
-  position: absolute;
-  bottom: -42px;
-  border-top: 42px solid;
-  border-color: inherit;
-  border-left: 73px solid transparent;
-  border-right: 73px solid transparent;
-
-  @media only screen and (max-width: 1920px) {
-    bottom: -30px;
-    border-top-width: 30px;
-    border-left-width: 52px;
-    border-right-width: 52px;
+  &.owned {
+    border: 5px solid $hex-starter;
+    display: block;
   }
-}
-
-.mecatol {
-  background-color: $hex-color--mecatol;
-  border-color: $hex-color--mecatol;
-
-  &:hover {
-    background-color: $hex-color--mecatol-light;
-    border-color: $hex-color--mecatol-light;
-  }
-}
-
-.starter {
-  background-color: $hex-starter;
-  border-color: $hex-starter;
-
-  &:hover {
-    background-color: $hex-starter-light;
-    border-color: $hex-starter-light;
-  }
-}
-
-.opened {
-  background-color: $color-accent;
-  border-color: $color-accent;
 }
